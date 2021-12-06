@@ -1,3 +1,8 @@
+steps:
+#First Clone from Google Cloud Source Repository  
+- name: 'gcr.io/cloud-builders/git'
+  args: ['clone','https://github.com/TACHAH/IaC-CloudBuild']
+
 #Provision the resource using CDM
 - name: 'gcr.io/cloud-builders/gcloud'
   args: [
